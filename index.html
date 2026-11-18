@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umair — DevOps & Cloud Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Umair, an aspiring DevOps and Cloud Engineer specializing in CI/CD, Docker, and Linux automation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav wrap">
+        <a href="#home" class="brand">
+          <span class="brand-mark">U</span>
+          <span class="brand-text">umair<span class="dot">.</span>dev</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#pipeline">Pipeline</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        >
+          <span class="icon icon-moon">🌙</span>
+          <span class="icon icon-sun">☀️</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm Umair 👋</p>
+          <h1>
+            Aspiring DevOps &amp; <span class="grad">Cloud Engineer</span>
+          </h1>
+          <p class="hero-sub">
+            I build, containerize, and automate the deployment of web
+            applications — from a Dockerfile and a GitHub Actions pipeline to a
+            running container, with as few manual steps as possible.
+          </p>
+          <div class="hero-cta">
+            <a href="#skills" class="btn btn-primary">View Skills</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="status-card" id="status-card">
+          <div class="status-row">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="status-label" id="status-label">Checking status…</span>
+          </div>
+          <div class="status-meta">
+            <div class="status-line">
+              <span>Version</span><span id="status-version">—</span>
+            </div>
+            <div class="status-line">
+              <span>Last deployed</span><span id="status-time">—</span>
+            </div>
+            <div class="status-line">
+              <span>Served by</span><span>nginx:alpine</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills wrap">
+        <h2>Core Skills</h2>
+        <p class="section-sub">
+          The stack I use to take code from a commit to a running container.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">📝</div>
+            <h3>YAML</h3>
+            <p>
+              Writing clean, readable configuration for GitHub Actions workflows
+              and Docker Compose files.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>
+              Comfortable in the shell — navigation, permissions, process
+              management, and basic scripting.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">🔀</div>
+            <h3>Git &amp; GitHub</h3>
+            <p>
+              Version control day-to-day: branches, commits, pull requests, and
+              repo-based workflows.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">🐳</div>
+            <h3>Docker</h3>
+            <p>
+              Building images from a Dockerfile, running containers, and pushing
+              images to Docker Hub.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>CI/CD Pipelines</h3>
+            <p>
+              Automating build-and-deploy steps with GitHub Actions so every
+              push ships itself.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pipeline" class="pipeline wrap">
+        <h2>How This Site Deploys</h2>
+        <p class="section-sub">
+          This portfolio is the pipeline in action — not just a description of
+          it.
+        </p>
+
+        <div class="pipeline-flow">
+          <div class="pipeline-step">
+            <div class="pipeline-num">1</div>
+            <h4>Push to GitHub</h4>
+            <p>Code changes land in the repo's main branch.</p>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step">
+            <div class="pipeline-num">2</div>
+            <h4>GitHub Actions</h4>
+            <p>A workflow triggers automatically, builds the Docker image.</p>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step">
+            <div class="pipeline-num">3</div>
+            <h4>Docker Hub</h4>
+            <p>The built image is tagged and pushed to a registry.</p>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step">
+            <div class="pipeline-num">4</div>
+            <h4>nginx:alpine</h4>
+            <p>
+              The container pulls the new image and serves this page on port 80.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects wrap">
+        <h2>Projects</h2>
+        <p class="section-sub">
+          Edit these cards with your own work — this is placeholder content.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>This Portfolio Site</h3>
+            <p>
+              Static site, containerized with nginx:alpine, deployed
+              automatically via a GitHub Actions → Docker Hub pipeline.
+            </p>
+            <div class="tags">
+              <span>Docker</span><span>GitHub Actions</span><span>nginx</span>
+            </div>
+          </article>
+
+          <article class="project-card placeholder-card">
+            <h3>Your Next Project</h3>
+            <p>
+              Replace this card with something you've built — a script, a small
+              app, a homelab setup.
+            </p>
+            <div class="tags"><span>Add a tag</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact wrap">
+        <h2>Get in Touch</h2>
+        <p class="section-sub">Open to DevOps and Cloud opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:you@example.com" class="btn btn-primary"
+            >✉️ Email Me</a
+          >
+          <a
+            href="https://github.com/your-username"
+            class="btn btn-ghost"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/your-username"
+            class="btn btn-ghost"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>
+        &copy; <span id="year"></span> Umair. Built, containerized, and deployed
+        by hand — then automated.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
